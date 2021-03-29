@@ -1,0 +1,16 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$background-color: #f4f4f4;
+$background-primary: #2a51de;
+$background-secondary:#d1320f;
+
+// Margin & Padding classes
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+	.m-#{$space}{
+		margin: #{$space}rem;
+	}
+	.my-#{$space}{
+		margin: #{$space}rem 0;
+	}
+}

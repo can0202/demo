@@ -1,0 +1,23 @@
+%btn{
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 10px;
+	border-radius: 5px;
+	margin-right: 5px;
+	transition: all .4s ease;
+	text-decoration: none;
+	&:hover{
+		transform: scale(.8);
+	}
+}
+
+.btn-primary{
+	@extend %btn;
+	@include bgcolor(lighten(#2a51de, 20%));
+	@include color(white);
+}
+.btn-secondary{
+	@extend %btn;
+	@include bgcolor(lighten(#d1320f, 10%));
+	@include color(white);
+}

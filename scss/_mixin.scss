@@ -1,0 +1,6 @@
+@mixin bgcolor($backgroundColor) {
+    background-color: $backgroundColor;
+}
+@mixin color($colorMain){
+	color: $colorMain;
+}
